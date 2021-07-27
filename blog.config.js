@@ -1,7 +1,7 @@
 const BLOG = {
   title: 'Blog YTuong.me',
   author: 'YTuong.me',
-  email: 'i@craigary.net',
+  email: 'ytuongdotme@gmail.com',
   link: 'https://ytuong.vercel.app',
   description: 'This gonna be an awesome website.',
   lang: ['en-US', 'vi-VN'], // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
