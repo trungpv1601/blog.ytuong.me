@@ -91,12 +91,12 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
                   </div>
                 </div>
 
-                <div class="space-y-1 border-t-8 border-gray-500 py-4">
+                <div className="py-4 space-y-1 border-t-8 border-gray-500">
                   <a
                     href="https://www.facebook.com/anhnguyenjohn1"
-                    class="group flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                    className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
-                    <span class="truncate">Facebook</span>
+                    <span className="truncate">Facebook</span>
                   </a>
                 </div>
               </div>
