@@ -22,7 +22,7 @@ const BLOG = {
     keywords: ['bán hàng etsy', 'ý tưởng kinh doanh Online', 'ytuong', 'ytuong.me', 'etsy'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
-  notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
+  notionPageId: '2c31337786f04ddb81debbba66f7a8df', // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
     provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
