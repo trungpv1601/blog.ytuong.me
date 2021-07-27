@@ -7,6 +7,7 @@ const fontSansCJK = !CJK()
 const fontSerifCJK = !CJK()
   ? []
   : [`"Noto Serif CJK ${CJK()}"`, `"Noto Serif ${CJK()}"`]
+const colors = require("tailwindcss/colors")
 
 module.exports = {
   mode: 'jit',
@@ -20,7 +21,8 @@ module.exports = {
         },
         night: {
           DEFAULT: BLOG.darkBackground || '#111827'
-        }
+        },
+        ...colors
       },
       fontFamily: {
         sans: ['"IBM Plex Sans"', ...fontFamily.sans, ...fontSansCJK],
