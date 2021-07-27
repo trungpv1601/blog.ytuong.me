@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import BLOG from "@/blog.config";
 import Head from "next/head";
 import PropTypes from "prop-types";
+import Image from 'next/image'
 // import BlogPost from './BlogPost'
 
 const Container = ({ children, layout, fullWidth, ...customMeta }) => {
@@ -72,10 +73,10 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
             <div className="flex flex-col w-72">
               <div className="flex flex-col flex-1 h-0 px-4 bg-gray-100">
                 <div className="py-8 space-y-6 text-right">
-                  <img
+                  <Image
                     className="object-cover w-40 h-40 mx-auto rounded-full"
-                    src="https://res.cloudinary.com/vk1ng/image/upload/v1627399058/Screenshot_4_kjlalm.png"
-                    alt=""
+                    src={`https://res.cloudinary.com/vk1ng/image/upload/v1627399058/Screenshot_4_kjlalm.png`}
+                    alt={`JOHN NGUYEN`}
                   />
                   <div className="space-y-4">
                     <div className="space-y-1 text-lg font-medium leading-6">
