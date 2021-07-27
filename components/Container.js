@@ -98,6 +98,12 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
                   >
                     <span className="truncate">Facebook</span>
                   </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCdXNT0goskAkq78hx8QAQig"
+                    className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
+                  >
+                    <span className="truncate">Youtube</span>
+                  </a>
                 </div>
               </div>
             </div>
