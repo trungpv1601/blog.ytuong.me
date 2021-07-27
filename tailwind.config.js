@@ -25,10 +25,10 @@ module.exports = {
         ...colors
       },
       fontFamily: {
-        sans: ['"IBM Plex Sans"', ...fontFamily.sans, ...fontSansCJK],
+        sans: ['"Open Sans"', ...fontFamily.sans, ...fontSansCJK],
         serif: ['"Source Serif"', ...fontFamily.serif, ...fontSerifCJK],
         noEmoji: [
-          '"IBM Plex Sans"',
+          '"Open Sans"',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
