@@ -2,8 +2,8 @@ const BLOG = {
   title: 'Blog YTuong.me',
   author: 'YTuong.me',
   email: 'ytuongdotme@gmail.com',
-  link: 'https://ytuong.vercel.app',
-  description: 'This gonna be an awesome website.',
+  link: 'https://blog.ytuong.me',
+  description: 'Đây là nơi lưu trữ những suy nghĩ, trải nghiệm của tác giả về suốt quá trình bán hàng',
   lang: 'vi-VN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
@@ -17,9 +17,9 @@ const BLOG = {
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://www.facebook.com/groups/552601465720500',
+  socialLink: 'https://ytuong.me',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ['bán hàng etsy', 'ý tưởng kinh doanh Online', 'ytuong', 'ytuong.me', 'etsy'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
@@ -32,7 +32,7 @@ const BLOG = {
       domainId: '' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
     },
     gaConfig: {
-      measurementId: '' // e.g: G-XXXXXXXXXX
+      measurementId: 'G-C0PB8CMHEB' // e.g: G-XXXXXXXXXX
     }
   },
   comment: {
