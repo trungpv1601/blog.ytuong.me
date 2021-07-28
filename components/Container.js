@@ -93,25 +93,25 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
 
                 <div className="py-4 space-y-1 border-t-8 border-gray-500">
                   <a
-                    href="https://www.facebook.com/anhnguyenjohn1" target="_blank"
+                    href="https://www.facebook.com/anhnguyenjohn1" target="_blank" rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Facebook</span>
                   </a>
                   <a
-                    href="https://www.youtube.com/channel/UCdXNT0goskAkq78hx8QAQig" target="_blank"
+                    href="https://www.youtube.com/channel/UCdXNT0goskAkq78hx8QAQig" target="_blank" rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Youtube</span>
                   </a>
                   <a
-                    href="https://etsy.ytuong.me/" target="_blank"
+                    href="https://etsy.ytuong.me/" target="_blank" rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Tool For Researching Etsy</span>
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=ivL_-KCmw5c" target="_blank"
+                    href="https://www.youtube.com/watch?v=ivL_-KCmw5c" target="_blank" rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Download Email Etsy FREE</span>
