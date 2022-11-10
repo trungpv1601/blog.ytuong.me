@@ -1,17 +1,17 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import BLOG from '@/blog.config'
-import Head from 'next/head'
-import PropTypes from 'prop-types'
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BLOG from "@/blog.config";
+import Head from "next/head";
+import PropTypes from "prop-types";
 // import BlogPost from './BlogPost'
 
 const Container = ({ children, layout, fullWidth, ...customMeta }) => {
-  const url = BLOG.path.length ? `${BLOG.link}/${BLOG.path}` : BLOG.link
+  const url = BLOG.path.length ? `${BLOG.link}/${BLOG.path}` : BLOG.link;
   const meta = {
     title: BLOG.title,
-    type: 'website',
-    ...customMeta
-  }
+    type: "website",
+    ...customMeta,
+  };
   return (
     <div>
       <Head>
@@ -26,7 +26,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
           />
         )}
         {BLOG.seo.keywords && (
-          <meta name="keywords" content={BLOG.seo.keywords.join(', ')} />
+          <meta name="keywords" content={BLOG.seo.keywords.join(", ")} />
         )}
         <meta name="description" content={meta.description} />
         <meta property="og:locale" content={BLOG.lang} />
@@ -52,7 +52,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
             meta.title
           )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fnobelium.vercel.app%2Flogo-for-dark-bg.svg`}
         />
-        {meta.type === 'article' && (
+        {meta.type === "article" && (
           <>
             <meta
               property="article:published_time"
@@ -64,7 +64,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
       </Head>
       <div
         className={`wrapper ${
-          BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
+          BLOG.font === "serif" ? "font-serif" : "font-sans"
         }`}
       >
         <div className="flex h-screen overflow-hidden bg-white">
@@ -74,8 +74,8 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
                 <div className="py-8 space-y-6 text-right">
                   <img
                     className="object-cover w-40 h-40 mx-auto rounded-full"
-                    src='https://res.cloudinary.com/vk1ng/image/upload/v1627399058/Screenshot_4_kjlalm.png'
-                    alt='JOHN NGUYEN'
+                    src="https://res.cloudinary.com/vk1ng/image/upload/v1668051762/johnnguyen_zs0ue3.jpg"
+                    alt="JOHN NGUYEN"
                   />
                   <div className="space-y-4">
                     <div className="space-y-1 text-lg font-medium leading-6">
@@ -93,25 +93,33 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
 
                 <div className="py-4 space-y-1 border-t-8 border-gray-500">
                   <a
-                    href="https://www.facebook.com/anhnguyenjohn1" target="_blank" rel="noreferrer"
+                    href="https://www.facebook.com/anhnguyenjohn1"
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Facebook</span>
                   </a>
                   <a
-                    href="https://www.youtube.com/channel/UCdXNT0goskAkq78hx8QAQig" target="_blank" rel="noreferrer"
+                    href="https://www.youtube.com/channel/UCdXNT0goskAkq78hx8QAQig"
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Youtube</span>
                   </a>
                   <a
-                    href="https://etsy.ytuong.me/" target="_blank" rel="noreferrer"
+                    href="https://etsy.ytuong.me/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Tool For Researching Etsy</span>
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=ivL_-KCmw5c" target="_blank" rel="noreferrer"
+                    href="https://www.youtube.com/watch?v=ivL_-KCmw5c"
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-end px-3 py-2 text-sm font-medium text-gray-600 rounded-md group hover:text-gray-900 hover:bg-gray-50"
                   >
                     <span className="truncate">Download Email Etsy FREE</span>
@@ -122,12 +130,12 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
           </div>
           <div className="flex flex-col flex-1 w-0 overflow-auto">
             <Header
-              navBarTitle={layout === 'blog' ? meta.title : null}
+              navBarTitle={layout === "blog" ? meta.title : null}
               fullWidth={fullWidth}
             />
             <main
               className={`m-auto flex-grow w-full transition-all ${
-                !fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24'
+                !fullWidth ? "max-w-2xl px-4" : "px-4 md:px-24"
               }`}
             >
               {children}
@@ -137,11 +145,11 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Container.propTypes = {
-  children: PropTypes.node
-}
+  children: PropTypes.node,
+};
 
-export default Container
+export default Container;
